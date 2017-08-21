@@ -20,10 +20,8 @@ $('#salesforce-col').on('click', function() {
 	if (!$$.is('.on')) {
 		$$.addClass('on');
 		// run function to remove all other 'ons' from other oftens
-		document.getElementById("salesforce-col").src = "https://www.moplovers.com.au/wp-content/uploads/2017/02/move-on.png";
 	} else {
 		$$.removeClass('on');
-		document.getElementById("salesforce-col").src = "https://www.moplovers.com.au/wp-content/uploads/2017/02/move-off.png";
 	}
 	calculatesubtotal();
 })
@@ -32,10 +30,8 @@ $('#serviceCloud-col').on('click', function() {
 	if (!$$.is('.on')) {
 		$$.addClass('on');
 		// run function to remove all other 'ons' from other oftens
-		document.getElementById("serviceCloud-col").src = "https://www.moplovers.com.au/wp-content/uploads/2017/02/fridge-on.png";
 	} else {
 		$$.removeClass('on');
-		document.getElementById("serviceCloud-col").src = "https://www.moplovers.com.au/wp-content/uploads/2017/02/fridge-off.png";
 	}
 	calculatesubtotal();
 })
