@@ -1,0 +1,93 @@
+/*Quote Styling*/
+#quote-calc .total { font-size: 24px; }
+#quote-calc .quote-calc {
+	background-color: #EFEFEF;
+	padding: 20px;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;}
+
+#quote-calc .quote-col {
+	margin-top: 10px;
+	margin-bottom: 30px;}
+#quote-calc .quote {
+	border: 2px solid #FF3B3F;
+	border-radius: 10px;
+	padding: 20px 10px 20px 10px;
+	text-align: center;
+	background-color: #FFF; }
+#quote-calc .quote-col a { display: block; margin-top: 20px; text-align: center;}
+#quote-calc .form-control {margin-top: 20px;}
+
+/* row often */
+#quote-calc .row-often .col-occur {
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px solid transparent;
+	margin: 15px auto; }
+#quote-calc .row-often .col-occur img { width: 100%;
+	max-width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block; }
+#quote-calc .row-often  { margin-top: 20px;}
+#quote-calc .row-often  .on { border: 2px solid #FF3B3F;  background-color: #FFF; }
+#quote-calc .row-often .on .disc { color: #FF3B3F; }
+#quote-calc .row-often .form-group, .row-extras #quote-calc .form-group, .row-extras { margin-top: 20px;}
+#quote-calc .row-often .disc { margin-top: 5px; text-align: center;}
+
+/* extras */
+#quote-calc .row-extras { /*margin-top: 50px;*/ }
+#quote-calc .row-extras .col-sm-12 {
+	margin-bottom: 30px;}
+#quote-calc .row-extras .extra-container {
+	background-color: #FFF;
+	border: 2px solid #545454;
+	border-radius: 10px;
+	padding: 30px 15px;
+	margin: 15px auto;
+	height:auto;
+ }
+#quote-calc .row-extras img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 50%; }
+#quote-calc .row-extras .extra-name {
+	margin-top: 10px;
+	text-align: center;
+	}
+#quote-calc .row-extras .extra-price {
+	margin-top: 10px;
+	text-align: center;
+	}
+#quote-calc .row-extras .on {
+	border: 2px solid #FF3B3F;
+	background-color: #FFF; }
+#quote-calc .row-extras .on .extra-name {
+	color: #FF3B3F; }
+
+/* code that will be redundant after publishing */
+.quote a {border: 2px solid #FF3B3F; border-radius: 10px; padding: 10px 30px; font-size: 22px; text-decoration: none; color: #FFF; background-color: #FF3B3F; }
+.quote a:hover { background-color: transparent; color: #FF3B3F; }
+/*.quote-calc { max-width: 50%; }*/
+h3 { text-align: center; }
+
+.material-icons.md-18 {
+  font-size: 18px; }
+.material-icons.md-24 {
+  font-size: 24px; }
+.material-icons.md-36 {
+  font-size: 36px; }
+.material-icons.md-48 {
+  font-size: 48px; }
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26); }
+.material-icons.md-light {
+  color: white; }
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3); }
