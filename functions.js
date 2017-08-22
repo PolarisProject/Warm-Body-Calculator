@@ -3,6 +3,7 @@ priceCalculator.onchange = calculatesubtotal;
 priceCalculator.onchange();
 function calculatesubtotal() {
 	var computers = Number(document.getElementById('computers').value) || 0;
+	var people = Number(document.getElementById('peopleCount').value);
 	var extras = 0;
 	var salesforce = 0;
 	var serviceCloud = 0;
@@ -35,10 +36,10 @@ function calculatesubtotal() {
 	  if ( $( "#cellPhone" ).hasClass( "on" ) ) { cellPhone = 600; }
 		if ( $( "#cellPlan" ).hasClass( "on" ) ) { cellPlan = 1200; }
 	extras = salesforce + serviceCloud + monitor + keyboard + mouse + adobeAcrobat + adobeCC + intranet + deskPhone + phoneHeadset + okta + duo + five9 + cellPhone + cellPlan;
-	var subtotal = (computers + extras);
+	var subtotal = ((computers + extras) * people);
 	document.getElementById("total").innerHTML = "$" + subtotal.toFixed(2);
 }
-
+$('#peopleCount').on('')
 $('#salesforce-col').on('click', function() {
 	var $$ = $(this)
 	if (!$$.is('.on')) {
