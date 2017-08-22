@@ -14,6 +14,11 @@ function calculatesubtotal() {
 	var intranet = 0;
 	var deskPhone = 0;
 	var phoneHeadset = 0;
+	var okta = 0;
+	var duo = 0;
+	var five9 = 0;
+	var cellPhone = 0;
+	var cellPlan = 0;
 		if ( $( "#salesforce-col" ).hasClass( "on" ) ) {  salesforce = 99; }
 		if ( $( "#serviceCloud-col" ).hasClass( "on" ) ) { serviceCloud = 29; }
     if ( $( "#monitor" ).hasClass( "on" ) ) { monitor = 150; }
@@ -24,7 +29,12 @@ function calculatesubtotal() {
 		if ( $( "#intranet" ).hasClass( "on" ) ) { intranet = 36; }
 		if ( $( "#deskPhone" ).hasClass( "on" ) ) { deskPhone = 80; }
 		if ( $( "#phoneHeadset" ).hasClass( "on" ) ) { phoneHeadset = 100; }
-	extras = salesforce + serviceCloud + monitor + keyboard + mouse + adobeAcrobat + adobeCC + intranet + deskPhone + phoneHeadset;
+		if ( $( "#okta" ).hasClass( "on" ) ) { okta = 22; }
+		if ( $( "#duo" ).hasClass( "on" ) ) { duo = 25; }
+		if ( $( "#five9" ).hasClass( "on" ) ) { five9 = 1200; }
+	  if ( $( "#cellPhone" ).hasClass( "on" ) ) { cellPhone = 600; }
+		if ( $( "#cellPlan" ).hasClass( "on" ) ) { cellPlan = 1200; }
+	extras = salesforce + serviceCloud + monitor + keyboard + mouse + adobeAcrobat + adobeCC + intranet + deskPhone + phoneHeadset + okta + duo + five9 + cellPhone + cellPlan;
 	var subtotal = (computers + extras);
 	document.getElementById("total").innerHTML = "$" + subtotal.toFixed(2);
 }
@@ -120,6 +130,56 @@ $('#deskPhone').on('click', function() {
 	calculatesubtotal();
 })
 $('#phoneHeadset').on('click', function() {
+	var $$ = $(this)
+	if (!$$.is('.on')) {
+		$$.addClass('on');
+		// run function to remove all other 'ons' from other oftens
+	} else {
+		$$.removeClass('on');
+	}
+	calculatesubtotal();
+})
+$('#okta').on('click', function() {
+	var $$ = $(this)
+	if (!$$.is('.on')) {
+		$$.addClass('on');
+		// run function to remove all other 'ons' from other oftens
+	} else {
+		$$.removeClass('on');
+	}
+	calculatesubtotal();
+})
+$('#duo').on('click', function() {
+	var $$ = $(this)
+	if (!$$.is('.on')) {
+		$$.addClass('on');
+		// run function to remove all other 'ons' from other oftens
+	} else {
+		$$.removeClass('on');
+	}
+	calculatesubtotal();
+})
+$('#five9').on('click', function() {
+	var $$ = $(this)
+	if (!$$.is('.on')) {
+		$$.addClass('on');
+		// run function to remove all other 'ons' from other oftens
+	} else {
+		$$.removeClass('on');
+	}
+	calculatesubtotal();
+})
+$('#cellPhone').on('click', function() {
+	var $$ = $(this)
+	if (!$$.is('.on')) {
+		$$.addClass('on');
+		// run function to remove all other 'ons' from other oftens
+	} else {
+		$$.removeClass('on');
+	}
+	calculatesubtotal();
+})
+$('#cellPlan').on('click', function() {
 	var $$ = $(this)
 	if (!$$.is('.on')) {
 		$$.addClass('on');
