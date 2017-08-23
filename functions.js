@@ -38,13 +38,12 @@ function calculatesubtotal() {
 	  if ( $( "#cellPhone" ).hasClass( "on" ) ) { cellPhone = 600; }
 		if ( $( "#cellPlan" ).hasClass( "on" ) ) { cellPlan = 1200; }
 	extras = salesforce + serviceCloud + monitor + keyboard + mouse + adobeAcrobat + adobeCC + intranet + deskPhone + phoneHeadset + okta + duo + five9 + cellPhone + cellPlan;
-	var yearlyHelpDeskHours = people * yearlyHelpDesk;
-	var totalOnBoardingHours = people * onboardingHours;
-	var laborCosts = (totalOnBoardingHours);
+	var yearlyHelpDeskHours = (people * yearlyHelpDesk);
+	var onBoardingHours = (people * onboardingHours);
 	var subtotal = ((computers + extras) * people);
-  var grandTotal = (yearlyHelpDeskHours + laborCosts + subtotal);
+  var grandTotal = (yearlyHelpDeskHours + onBoardingHours + subtotal);
 	document.getElementById("total").innerHTML = "$" + subtotal.toFixed(2);
-	document.getElementById("onboardingHours").innerHTML = "$" + totalOnBoardingHours.toFixed(2);
+	document.getElementById("onboardingHours").innerHTML = "$" + onBoardingHours.toFixed(2);
 	document.getElementById("yearlyHelpDesk").innerHTML = "$" + yearlyHelpDeskHours.toFixed(2);
 	document.getElementById("grandTotal").innerHTML = "$" + grandTotal.toFixed(2);
 }
