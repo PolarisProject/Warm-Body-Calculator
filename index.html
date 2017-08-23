@@ -13,128 +13,142 @@
 </head>
 <body>
 	<h3>Onboarding Costs</h3>
-	<div class="col-sm-11 col-md-10" id="quote-calc">
-		<div class="form-group">
-      <div class="col-md-3">
-			   <h4>Computer</h4>
-      </div>
-			<select class="form-control" id="computers">
-                <option value="0">No Computer</option>
-                <option value="1135.00">Lenovo ThinkPad T460; 2.3GHz Corei5; 14in; 3.9lbs</option>
-                <option value="1320.00">Lenovo ThinkPad T470; 2.4GHz Corei5; 14in; 3.6lbs</option>
-                <option value="1500.00">Lenovo ThinkPad T470s; 2.4GHz Corei5; 14in; 2.9lbs</option>
-                <option value="2000.00">Lenovo ThinkPad X1 Carbon; 2.6GHz Corei7; 14in; 2.6lbs</option>
-      </select>
-    </div>
-    <div class="col-md-3">
-      <div class="form-group">
-        <div class="col-md-6">
-          <h4>Number of People</h4>
-        </div>
-      <select class="form-control" id="peopleCount" name="quantity" value="1">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-      </div>
+  <div class="row">
+	   <div class="col-sm-11 col-md-4 col-md-offset-1" id="quote-calc">
+       <h4>Computer</h4>
+       <select class="form-control" id="computers">
+         <option value="0">No Computer</option>
+         <option value="1135.00">Lenovo ThinkPad T460; 2.3GHz Corei5; 14in; 3.9lbs</option>
+         <option value="1320.00">Lenovo ThinkPad T470; 2.4GHz Corei5; 14in; 3.6lbs</option>
+         <option value="1500.00">Lenovo ThinkPad T470s; 2.4GHz Corei5; 14in; 2.9lbs</option>
+         <option value="2000.00">Lenovo ThinkPad X1 Carbon; 2.6GHz Corei7; 14in; 2.6lbs</option>
+       </select>
+     </div>
+     <div class="col-sm-1">
+       <h4>Number of People</h4>
+       <select class="form-control" id="peopleCount" name="quantity" value="1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+       </select>
+     </div>
+     <div class="col-md-3 col-md-offset-3 clearfix quote-col" >
+       <div class="quote">
+         <h1>First Year Cost Estimate:</h1>
+         <table class="table">
+           <tbody>
+             <tr>
+               <th>Products</th>
+               <td class="total" id="total">$0.00</td>
+             </tr>
+             <tr>
+               <th>Onboarding Labor</th>
+               <td class="onboardingHours" id="onboardingHours">100</td>
+             </tr>
+             <tr>
+               <th>Annual Help Desk Support</th>
+               <td class="yearlyHelpDesk" id="yearlyHelpDesk">400</td>
+             </tr>
+             <tr>
+               <th>Grant Total</th>
+               <td class="grandTotal" id="grandTotal">0</td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+     </div>
   </div>
-</div>
-  <div class="col-sm-1 col-md-2 clearfix quote-col" >
-    <div class="quote">
-      <h2>Your Estimate:</h2>
-      <span class="total" id="total">$0.00</span>
+  <div class="row">
+    <div class="col-md-10 col-sm-12 col-xs-12" id="quote-calc">
+      <div class="row-extras">
+      	<div class="form-group" id="extras">
+      		<div class="extra-container" id="salesforce-col">
+            <div class="extra-name">Salesforce</div>
+      			<div class="extra-price">$99</div>
+            <img src="images/salesforce.png">
+      		</div>
+      		<div class="extra-container" id="serviceCloud-col">
+            <div class="extra-name">Service Cloud</div>
+      			<div class="extra-price">$29</div>
+            <img src="images/servicecloud.png">
+      		</div>
+      		<div class="extra-container" id="monitor">
+            <div class="extra-name">Monitor</div>
+      			<div class="extra-price">$150</div>
+            <img src="images/monitor.png">
+      		</div>
+      		<div class="extra-container" id="keyboard">
+            <div class="extra-name">Keyboard</div>
+      			<div class="extra-price">$15</div>
+            <img src="images/keyboard.png">
+      		</div>
+          <div class="extra-container" id="mouse">
+            <div class="extra-name">Mouse</div>
+            <div class="extra-price">$15</div>
+            <img src="images/mouse.png">
+          </div>
+          <div class="extra-container" id="adobeAcrobat">
+            <div class="extra-name">Adobe Acrobat</div>
+            <div class="extra-price">$55</div>
+            <img src="images/acrobat.png">
+          </div>
+          <div class="extra-container" id="adobeCC">
+            <div class="extra-name">Adobe Creative Cloud</div>
+            <div class="extra-price">$245 (first year)</div>
+            <img src="images/adobecc.png">
+          </div>
+          <div class="extra-container" id="intranet">
+            <div class="extra-name">Intranet</div>
+            <div class="extra-price">$36 (first year)</div>
+            <img src="images/papyrs.png">
+          </div>
+          <div class="extra-container" id="deskPhone">
+            <div class="extra-name">Desk Phone</div>
+            <div class="extra-price">$80</div>
+            <img src="images/phone.png">
+          </div>
+          <div class="extra-container" id="phoneHeadset">
+            <div class="extra-name">Phone Headset</div>
+            <div class="extra-price">$100</div>
+            <img src="images/headset.png">
+          </div>
+          <div class="extra-container" id="okta">
+            <div class="extra-name">Okta Single Sign On</div>
+            <div class="extra-price">$22 (first year)</div>
+            <img src="images/okta.png">
+          </div>
+          <div class="extra-container" id="duo">
+            <div class="extra-name">Duo 2 Factor Authentication</div>
+            <div class="extra-price">$25 (first year)</div>
+            <img src="images/duo.png">
+          </div>
+          <div class="extra-container" id="five9">
+            <div class="extra-name">Five9</div>
+            <div class="extra-price">$1200 (first year)</div>
+            <img src="images/five9.png">
+          </div>
+          <div class="extra-container" id="cellPhone">
+            <div class="extra-name">Cell Phone</div>
+            <div class="extra-price">$600</div>
+            <img src="images/cellphone.png">
+          </div>
+          <div class="extra-container" id="cellPlan">
+            <div class="extra-name">Cell Phone Plan</div>
+            <div class="extra-price">$1200 (first year)</div>
+            <img src="images/cellplan.png">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="col-md-10 col-sm-12 col-xs-12" id="quote-calc">
-    <div class="row-extras">
-			<div class="form-group" id="extras">
-						<div class="extra-container" id="salesforce-col">
-              <div class="extra-name">Salesforce</div>
-							<div class="extra-price">$99</div>
-              <img src="images/salesforce.png">
-						</div>
-						<div class="extra-container" id="serviceCloud-col">
-              <div class="extra-name">Service Cloud</div>
-							<div class="extra-price">$29</div>
-              <img src="images/servicecloud.png">
-						</div>
-						<div class="extra-container" id="monitor">
-              <div class="extra-name">Monitor</div>
-							<div class="extra-price">$150</div>
-              <img src="images/monitor.png">
-						</div>
-						<div class="extra-container" id="keyboard">
-              <div class="extra-name">Keyboard</div>
-							<div class="extra-price">$15</div>
-              <img src="images/keyboard.png">
-						</div>
-            <div class="extra-container" id="mouse">
-              <div class="extra-name">Mouse</div>
-              <div class="extra-price">$15</div>
-              <img src="images/mouse.png">
-            </div>
-            <div class="extra-container" id="adobeAcrobat">
-              <div class="extra-name">Adobe Acrobat</div>
-              <div class="extra-price">$55</div>
-              <img src="images/acrobat.png">
-            </div>
-            <div class="extra-container" id="adobeCC">
-              <div class="extra-name">Adobe Creative Cloud</div>
-              <div class="extra-price">$245 (first year)</div>
-              <img src="images/adobecc.png">
-            </div>
-            <div class="extra-container" id="intranet">
-              <div class="extra-name">Intranet</div>
-              <div class="extra-price">$36 (first year)</div>
-              <img src="images/papyrs.png">
-            </div>
-            <div class="extra-container" id="deskPhone">
-              <div class="extra-name">Desk Phone</div>
-              <div class="extra-price">$80</div>
-              <img src="images/phone.png">
-            </div>
-            <div class="extra-container" id="phoneHeadset">
-              <div class="extra-name">Phone Headset</div>
-              <div class="extra-price">$100</div>
-              <img src="images/headset.png">
-            </div>
-            <div class="extra-container" id="okta">
-              <div class="extra-name">Okta Single Sign On</div>
-              <div class="extra-price">$22 (first year)</div>
-              <img src="images/okta.png">
-            </div>
-            <div class="extra-container" id="duo">
-              <div class="extra-name">Duo 2 Factor Authentication</div>
-              <div class="extra-price">$25 (first year)</div>
-              <img src="images/duo.png">
-            </div>
-            <div class="extra-container" id="five9">
-              <div class="extra-name">Five9</div>
-              <div class="extra-price">$1200 (first year)</div>
-              <img src="images/five9.png">
-            </div>
-            <div class="extra-container" id="cellPhone">
-              <div class="extra-name">Cell Phone</div>
-              <div class="extra-price">$600</div>
-              <img src="images/cellphone.png">
-            </div>
-            <div class="extra-container" id="cellPlan">
-              <div class="extra-name">Cell Phone Plan</div>
-              <div class="extra-price">$1200 (first year)</div>
-              <img src="images/cellplan.png">
-            </div>
-        </div>
-			</div>
-		</div></div>
 
-	</div>
 
 
 

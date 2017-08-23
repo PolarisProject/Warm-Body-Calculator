@@ -3,7 +3,9 @@ priceCalculator.onchange = calculatesubtotal;
 priceCalculator.onchange();
 function calculatesubtotal() {
 	var computers = Number(document.getElementById('computers').value) || 0;
-	var people = Number(document.getElementById('peopleCount').value);
+	var people = Number(document.getElementById('peopleCount').value) || 1;
+	var onboardingHours = Number(document.getElementById('onboardingHours').value) || 100;
+	var yearlyHelpDesk = Number(document.getElementById('yearlyHelpDesk').value) || 400;
 	var extras = 0;
 	var salesforce = 0;
 	var serviceCloud = 0;
@@ -36,8 +38,15 @@ function calculatesubtotal() {
 	  if ( $( "#cellPhone" ).hasClass( "on" ) ) { cellPhone = 600; }
 		if ( $( "#cellPlan" ).hasClass( "on" ) ) { cellPlan = 1200; }
 	extras = salesforce + serviceCloud + monitor + keyboard + mouse + adobeAcrobat + adobeCC + intranet + deskPhone + phoneHeadset + okta + duo + five9 + cellPhone + cellPlan;
+	var yearlyHelpDeskHours = people * yearlyHelpDesk;
+	var totalOnBoardingHours = people * onboardingHours;
+	var laborCosts = (totalOnBoardingHours);
 	var subtotal = ((computers + extras) * people);
+  var grandTotal = (yearlyHelpDeskHours + laborCosts + subtotal);
 	document.getElementById("total").innerHTML = "$" + subtotal.toFixed(2);
+	document.getElementById("onboardingHours").innerHTML = "$" + totalOnBoardingHours.toFixed(2);
+	document.getElementById("yearlyHelpDesk").innerHTML = "$" + yearlyHelpDeskHours.toFixed(2);
+	document.getElementById("grandTotal").innerHTML = "$" + grandTotal.toFixed(2);
 }
 $('#peopleCount').on('')
 $('#salesforce-col').on('click', function() {
